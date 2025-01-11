@@ -34,11 +34,6 @@ Clone the repository to your local machine:
 
 bash
 Copy code
-git clone https://github.com/your-username/netflix-clone.git
-Navigate to the project directory:
-
-bash
-Copy code
 cd netflix-clone
 Open the index.html file in your browser to view the website:
 
