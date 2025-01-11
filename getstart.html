@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Get Started - Netflix</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            background-color: #141414;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .background {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: url('assets/img/bg.jpg') no-repeat center center/cover;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .logo img {
+            width: 150px;
+            margin-bottom: 30px;
+        }
+
+        .get-started-form {
+            background-color: rgba(0, 0, 0, 0.75);
+            padding: 30px;
+            border-radius: 5px;
+            display: inline-block;
+            width: 400px;
+            text-align: left;
+        }
+
+        .get-started-form h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .get-started-form input,
+        .get-started-form select {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .get-started-form button {
+            width: 100%;
+            padding: 15px;
+            background-color: #e50914;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .get-started-form button:hover {
+            background-color: #f40612;
+        }
+
+        .form-info {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #b3b3b3;
+        }
+
+        .form-info a {
+            color: #b3b3b3;
+            text-decoration: none;
+        }
+
+        .signup-link {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .signup-link a {
+            color: #b3b3b3;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/img/logo.svg" alt="Netflix Logo">
+            </div>
+            <div class="get-started-form">
+                <h1>Get Started</h1>
+                <form action="#" method="POST">
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Enter your email" required>
+                    <input type="password" placeholder="Create a password" required>
+                    <select required>
+                        <option value="" disabled selected>Select your plan</option>
+                        <option value="basic">Basic Plan</option>
+                        <option value="standard">Standard Plan</option>
+                        <option value="premium">Premium Plan</option>
+                    </select>
+                    <button type="submit">Continue</button>
+                </form>
+                <div class="form-info">
+                    <p>By clicking "Continue", you agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
+                </div>
+            </div>
+            <div class="signup-link">
+                <p>Already a member? <a href="signin.html">Sign In</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
